@@ -16,12 +16,12 @@ stages{
     steps{
         echo " example for using jenkins files "
     }
+    }
     stage('mail stage') {
     steps{
         emailext body: 'Jenkins Build job ', subject: 'Jenkins Build job ', to: 'vinaykumarveeraboina@gmail.com'
     }
         
-}
 }
 }
 }
