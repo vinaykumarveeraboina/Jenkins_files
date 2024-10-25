@@ -7,12 +7,23 @@ pipeline{
         course = "k8s"
     }
     stages{
-        stage ('env testing') {
+        stage ('global env testing') {
              steps{
                 echo "welcome ${name}"
                 echo " weclome to ${course}"
 
              }
+        }
+        stage ('local env testing') {
+            environment{
+               name = "local"
+                  course = "openshift" 
+            }
+            steps{
+                echo "welcome ${name}"
+                echo " weclome to ${course}"
+
+            }
         }
     }
 }
