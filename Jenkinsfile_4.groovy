@@ -24,9 +24,10 @@ pipeline{
                   else  
                    {
                    println(" Go and enrol")
-                    sleep 10 // sh 'sleep 5'
-                    echo "************** script block ended ********************"
+                    
                     }
+                sleep 10 // sh 'sleep 5'
+                echo "************** script block ended ********************"    
                }
             }
         
