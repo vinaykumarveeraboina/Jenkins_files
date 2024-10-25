@@ -3,7 +3,7 @@
 pipeline{
     agent any 
     stages{
-        stages('retry stage'){
+        stage('retry stage'){
             steps{
                 retry(3) {
                 echo 'retry block'
