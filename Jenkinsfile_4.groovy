@@ -4,7 +4,9 @@ pipeline{
     stages{
 
         stage ('hello') {
-           echo "Hello!! MR.vk"
+            steps{
+             echo "Hello!! MR.vk"
+            }
         }
 
         stage ('scripted stage')
