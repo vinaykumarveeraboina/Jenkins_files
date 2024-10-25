@@ -3,8 +3,8 @@ pipeline{
     environment
     {
         //key value pairs
-        name = vinay
-        course = k8s
+        name = "vinay"
+        course = "k8s"
     }
     stages{
         stage ('env testing') {
