@@ -13,7 +13,7 @@ stages{
         agent{   // this is specific to stage 
             node {
                 label mvn-slave
-                customworkspace '/home/jslave/agnettest'
+                customWorkspace '/home/jslave/agnettest'
             }
         }
     steps{
