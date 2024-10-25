@@ -3,7 +3,7 @@
 pipeline{
     agent any
     tools{
-     java 'JavaJdk_21'
+     jdk 'JavaJdk_21'
     }
     
     stages    
@@ -20,7 +20,7 @@ pipeline{
     stage('jdk 17')
     {
         tools {
-            java 'JavaJdk_17'
+            jdk 'JavaJdk_17'
         }
         steps{
             echo " jdk 17"
