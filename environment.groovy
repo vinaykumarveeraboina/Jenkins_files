@@ -22,7 +22,8 @@ pipeline{
             steps{
                 echo "welcome ${name}"
                 echo " weclome to ${course}"
-                sh "print env"
+                //sh "print env"  //linux
+                bat 'set'
 
             }
         }
