@@ -16,7 +16,7 @@ pipeline{
                   def course ="k8s"  //static defination 
                   if(course == "k8s")
                    {
-                      println ("Thanks for subscription")
+                      println ("Thanks for subscription to + ${course}")
                    }
                   else  
                    {
