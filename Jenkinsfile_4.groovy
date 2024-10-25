@@ -1,3 +1,6 @@
+//script block should be available in steps block 
+// script used groovy as the programming language 
+
 pipeline{
     agent any 
 
@@ -16,7 +19,7 @@ pipeline{
                   def course ="k8s"  //static defination 
                   if(course == "k8s")
                    {
-                      println ("Thanks for subscription to + ${course}")
+                      println ("Thanks for subscription to  ${course}")
                    }
                   else  
                    {
