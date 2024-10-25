@@ -6,7 +6,7 @@ pipeline{
         name = vinay
         course = k8s
     }
-    stages{
+    stages('env testing'){
         stage{
              steps{
                 echo "welcome ${name}"
