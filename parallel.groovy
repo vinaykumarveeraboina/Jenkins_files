@@ -15,6 +15,7 @@ pipeline{
                 steps{
                 echo "fortyfyscan"
                 sleep 10
+                error 'simulating error during fortyscan'
 
             }
             }
