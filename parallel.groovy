@@ -1,14 +1,14 @@
 pipeline{
     agent any 
     stages{
+        stage('running parallel jobs'){
         parallel{
             stage('sonar')
             {
-                steps{
+             steps{
                 echo "sonar step"
                 sleep 10
-
-            }
+                }
             }
             stage('fortyfyscan')
             {
@@ -27,5 +27,6 @@ pipeline{
             }
             }
         }
+    }
     }
 }
