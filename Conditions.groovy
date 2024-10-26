@@ -5,7 +5,9 @@ pipeline{
     }
     stages{
         stage ('deploy') {
-            when {environmnet name : 'DEPLOY_to', value : 'prod'}
+            when {
+                environment name : 'DEPLOY_to', value : 'prod'
+                }
              steps{
                   echo " deploying "
                   
