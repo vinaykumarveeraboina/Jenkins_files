@@ -9,10 +9,9 @@ string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I sa
 //real time we can give branch name 
 //string(name: 'Branch', defaultValue: 'main', description: 'Who brnch should I deploy?')
 choice(
-     
-     choice(name: 'ENVironmnet', choices: ['main', 'dev', 'stage','prod'], description: 'Pick something')
-
-)
+    name: 'ENVironmnet', 
+    choices: ['main', 'dev', 'stage','prod'], 
+    description: 'Pick something')
 }
 stages{
     stage('param stage'){
