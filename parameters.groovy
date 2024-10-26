@@ -10,7 +10,7 @@ string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I sa
 //string(name: 'Branch', defaultValue: 'main', description: 'Who brnch should I deploy?')
 choice(
      
-     choice(name: 'ENVironmnet', choices: ['main', 'dev', 'stage' 'prod'], description: 'Pick something')
+     choice(name: 'ENVironmnet', choices: ['main', 'dev', 'stage','prod'], description: 'Pick something')
 
 )
 }
