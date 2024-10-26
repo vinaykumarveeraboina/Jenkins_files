@@ -18,7 +18,7 @@ stages{
     stage('param stage'){
         steps{
            echo "Hello ${params.PERSON}"   //person is a variable of type string and take the string input and print it 
-           echo "deployed on ${param.ENVironmnet}"
+           echo "deployed on ${params.ENVironmnet}"
 
         }
     }
