@@ -12,7 +12,7 @@ string(name: 'Branch', defaultValue: 'main', description: 'Who brnch should I de
 stages{
     stage('param stage'){
         steps{
-           echo "Hello siva"
+           echo "Hello ${params.PERSON}"   //person is a variable of type string and take the string input and print it 
         }
     }
 }
