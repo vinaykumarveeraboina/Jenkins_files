@@ -7,20 +7,20 @@ pipeline{
             }
         }
         post{
-            sucess{
-                "build stage is sucess"
+            success{
+                echo "build stage is sucess"
             }
             failure{
-                "build stage got failed"
+                echo "build stage got failed"
             }
         }
     }
     post{
-            sucess{
-                "pipeline is sucess"
+            success{
+                echo "pipeline is sucess"
             }
             failure{
-                "pileline got failed"
+                echo "pileline got failed"
             }
         }
 
