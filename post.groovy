@@ -5,6 +5,7 @@ pipeline{
         {
             steps{
                 echo " build and deploy yo dev"
+                error "failing the stage intentionally"
             }
         post{
             success{
