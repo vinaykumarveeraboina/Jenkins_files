@@ -7,7 +7,7 @@ pipeline{
 
         stage('deploy to dev')
         {
-            {steps
+            steps{
           echo "deploying to dev env "
 
         }
