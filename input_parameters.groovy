@@ -7,18 +7,21 @@ pipeline{
 
         stage('deploy to dev')
         {
-      echo "deploying to dev env "
+            {steps
+          echo "deploying to dev env "
 
         }
-
-        stage('deploy to prod'){
-            options{ 
+        }
+         stage('deploy to prod')
+         {
+         options{ 
                 timeout(time :600 ,unit : 'SECONDS')
                 }
+         
                 inputs{
                     message : "should we continue"
                     submitter : 'vinay'
-                    submitterParameter: "who approved"   // submitterParameter --type  who approved is the variable , which stores the value of submitter
+                    submitterParameter: "who approved"   
                 }
                 parameters {
                     string(name: 'CHANGE_TICKET', defaultValue: 'CH12345', description: 'Please Enter Change Ticket number')
@@ -28,7 +31,7 @@ pipeline{
                     password(name: 'myPassword', defaultValue: 'myPasswordValue', description: 'Enter the password')
                     credentials(name: 'myCredentials', description: 'My Credentials stored', required: true)
                 }
-            }
+          
             steps {
                 echo "The Change Ticket is ${CHANGE_TICKET}"
                 echo "Deploying to Production"
@@ -37,8 +40,11 @@ pipeline{
             }
         }
     }
+}
 
 
+
+// submitterParameter --type  who approved is the variable , which stores the value of submitter
 // pipeline >> params.NAME
 // stage >.>.input >>>> parameters >>> NAME
 
