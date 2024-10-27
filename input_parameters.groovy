@@ -13,7 +13,7 @@ pipeline{
 
         stage('deploy to prod'){
             options{ 
-                timeout{time :600 ,unit : 'SECONDS'}
+                timeout(time :600 ,unit : 'SECONDS')
                 }
                 inputs{
                     message : "should we continue"
