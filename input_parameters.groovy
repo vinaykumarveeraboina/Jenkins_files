@@ -19,6 +19,7 @@ pipeline{
          
                 input {
                     message : "should we continue"
+                    ok : "approved"
                     submitter : 'vinay'
                     submitterParameter: "who approved"   
                 parameters {
