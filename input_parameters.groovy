@@ -13,7 +13,7 @@ pipeline{
 
          stage('deploy to prod')
          {
-         options{ 
+           options{ 
                 timeout(time :600 ,unit : 'SECONDS')
                 }
          
@@ -21,7 +21,6 @@ pipeline{
                     message : "should we continue"
                     submitter : 'vinay'
                     submitterParameter: "who approved"   
-                }
                 parameters {
                     string(name: 'CHANGE_TICKET', defaultValue: 'CH12345', description: 'Please Enter Change Ticket number')
                     booleanParam(name: 'SRE Approved ????', defaultValue: true, description: 'Is approval taken from SRE??')
@@ -29,6 +28,7 @@ pipeline{
                     text(name: 'Notes', defaultValue: "Enter release notes if any.....", description: 'Release Notes')
                     password(name: 'myPassword', defaultValue: 'myPasswordValue', description: 'Enter the password')
                     credentials(name: 'myCredentials', description: 'My Credentials stored', required: true)
+                }
                 }
           
             steps {
