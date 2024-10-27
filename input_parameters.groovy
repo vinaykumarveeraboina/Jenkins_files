@@ -18,10 +18,10 @@ pipeline{
                 }
          
                 input {
-                    message : "should we continue"
-                    ok : "approved"
-                    submitter : 'vinay'
-                    submitterParameter: "who approved"   
+                    message "should we continue"
+                    ok "approved"
+                    submitter 'vinay'
+                    submitterParameter "who approved"   
                 parameters {
                     string(name: 'CHANGE_TICKET', defaultValue: 'CH12345', description: 'Please Enter Change Ticket number')
                     booleanParam(name: 'SRE Approved ????', defaultValue: true, description: 'Is approval taken from SRE??')
