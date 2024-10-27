@@ -4,14 +4,13 @@ pipeline{
     agent any
 
     stages{
-
-        stage('deploy to dev')
+    stage('deploy to dev')
         {
-            steps{
+        steps {
           echo "deploying to dev env "
+          }
+        }
 
-        }
-        }
          stage('deploy to prod')
          {
          options{ 
