@@ -17,7 +17,7 @@ pipeline{
                 timeout(time :600 ,unit : 'SECONDS')
                 }
          
-                inputs{
+                input {
                     message : "should we continue"
                     submitter : 'vinay'
                     submitterParameter: "who approved"   
