@@ -14,7 +14,11 @@ pipeline{
             failure{
                 echo "build stage got failed"
             }
+            always{
+                echo " allways should execute"
+            }
         }
+        
     }
     }
     post{
@@ -24,6 +28,10 @@ pipeline{
             failure{
                 echo "pileline got failed"
             }
+            always{
+                echo " allways should execute"
+            }
+
         }
 
     }
