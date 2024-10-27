@@ -19,7 +19,7 @@ pipeline{
          
                 input {
                     message "should we continue"
-                    ok "approved"
+                    ok "click to approve"
                     submitter 'vinay'
                     submitterParameter "whoApproved"   
                 parameters {
