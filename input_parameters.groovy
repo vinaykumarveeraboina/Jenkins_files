@@ -43,7 +43,7 @@ pipeline{
 }
 
 
-
+//credentials --it will display all the global level creds
 // submitterParameter --type  who approved is the variable , which stores the value of submitter
 // pipeline >> params.NAME
 // stage >.>.input >>>> parameters >>> NAME
